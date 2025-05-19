@@ -1,60 +1,53 @@
 @font-face {
-  font-family: 'Satoshi Variable';
+  font-family: "Satoshi Variable";
   src: url("/fonts/SatoshiVariable-Bold.woff2") format("woff2"), url("/fonts/SatoshiVariable-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Satoshi Variable';
+  font-family: "Satoshi Variable";
   src: url("/fonts/SatoshiVariable-BoldItalic.woff2") format("woff2"), url("/fonts/SatoshiVariable-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   src: url("/fonts/Satoshi-Regular.woff2") format("woff2"), url("/fonts/Satoshi-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   src: url("/fonts/Satoshi-Bold.woff2") format("woff2"), url("/fonts/Satoshi-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   src: url("/fonts/Satoshi-Light.woff2") format("woff2"), url("/fonts/Satoshi-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   src: url("/fonts/Satoshi-Medium.woff2") format("woff2"), url("/fonts/Satoshi-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
 }
 
 ul {
@@ -80,4 +73,56 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.stay__top {
+  justify-content: space-between;
+  border-radius: 20px;
+  padding-top: 36px;
+  padding-right: 64px;
+  padding-bottom: 36px;
+  padding-left: 64px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.stay__top-title {
+  max-width: 551px;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0%;
+}
+
+.stay__top-inp {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 52px;
+  padding-right: 124px;
+  border: none;
+  border-radius: 62px;
+}
+
+.stay__top-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border-radius: 62px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  margin-top: 14px;
+}
+
+.logo {
+  width: 167px;
+  height: 23px;
+}/*# sourceMappingURL=main.css.map */
