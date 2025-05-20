@@ -57,6 +57,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
+  cursor: pointer;
 }
 
 .footer__top {
@@ -204,10 +205,13 @@
   .footer__top {
     flex-wrap: wrap;
     justify-content: start;
+    gap: 24.42px;
   }
 
   .footer__left {
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
   }
   .footer__right {
     flex-wrap: wrap;
