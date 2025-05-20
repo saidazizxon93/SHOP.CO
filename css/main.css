@@ -122,7 +122,127 @@ img {
   margin-top: 14px;
 }
 
+.footer__top {
+  display: flex;
+  justify-content: center;
+  gap: 113.5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.footer__right-title {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 25px;
+}
+
 .logo {
   width: 167px;
   height: 23px;
+}
+
+.sponsor-1 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-2 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-3 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-4 {
+  width: 28px;
+  height: 28px;
+}
+
+.footer__right-sponsors {
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.footer__left {
+  display: flex;
+  justify-content: center;
+  gap: 113.5px;
+}
+
+.footer__item-title {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer__item-item {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 26px;
+}
+
+.footer__item-item:hover {
+  color: #000000;
+}
+
+.footer__btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 88px;
+}
+
+.footer__btn-title {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__payment-method {
+  display: flex;
+}
+
+.VISA {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Master__Card {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.PayPal {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Apple__Pay {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Google__Pay {
+  width: 46.61px;
+  height: 30.03px;
 }/*# sourceMappingURL=main.css.map */
