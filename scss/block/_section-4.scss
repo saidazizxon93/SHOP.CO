@@ -1,0 +1,57 @@
+.reviews {
+  margin-top: 80px;
+}
+
+.reviews__inner {
+}
+.reviews__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.review__item {
+  min-width: 400px;
+  height: 240px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-bottom: 28px;
+  padding-left: 32px;
+  border: 1px solid #0000001a;
+}
+.review__item-title {
+  position: relative;
+}
+
+.review__item-title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../imgs/Frame\ \(3\).svg");
+  left: 66px;
+  bottom: 2px;
+}
+
+.review__item-text {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #00000099;
+  margin-top: 12px;
+}

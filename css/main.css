@@ -81,8 +81,68 @@ img {
   padding-right: 20px;
 }
 
-.footer {
-  background-color: #f0f0f0;
+.reviews {
+  margin-top: 80px;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.review__item {
+  min-width: 400px;
+  height: 240px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding-top: 28px;
+  padding-right: 32px;
+  padding-bottom: 28px;
+  padding-left: 32px;
+  border: 1px solid #0000001a;
+}
+
+.review__item-title {
+  position: relative;
+}
+
+.review__item-title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../imgs/Frame (3).svg");
+  left: 66px;
+  bottom: 2px;
+}
+
+.review__item-text {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #00000099;
+  margin-top: 12px;
 }
 
 .stay__top {
@@ -94,6 +154,8 @@ img {
   padding-right: 64px;
   padding-bottom: 36px;
   padding-left: 64px;
+  margin-left: 100px;
+  margin-right: 100px;
   background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +163,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 80.42px;
 }
 
 .stay__top-title {
@@ -133,11 +196,207 @@ img {
   padding-bottom: 12px;
   background-color: white;
   margin-top: 14px;
+  border: none;
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 113.5px;
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.footer__right-title {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #00000099;
+  margin-top: 25px;
 }
 
 .logo {
   width: 167px;
   height: 23px;
+}
+
+.sponsor-1 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-2 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-3 {
+  width: 28px;
+  height: 28px;
+}
+
+.sponsor-4 {
+  width: 28px;
+  height: 28px;
+}
+
+.footer__right-sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.footer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 113.5px;
+}
+
+.footer__item-title {
+  font-family: Satoshi;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer__item-item {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0px;
+  color: #00000099;
+  margin-top: 26px;
+}
+
+.footer__item-item:hover {
+  color: #000000;
+}
+
+.footer__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  padding-bottom: 88px;
+}
+
+.footer__btn-title {
+  font-family: Satoshi;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #00000099;
+}
+
+.footer__payment-method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.VISA {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Master__Card {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.PayPal {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Apple__Pay {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+.Google__Pay {
+  width: 46.61px;
+  height: 30.03px;
+}
+
+@media only screen and (max-width: 440px) {
+  .stay__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stay__top-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 0%;
+    margin-bottom: 32px;
+  }
+  .footer__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 24.42px;
+  }
+  .footer__left {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 24px;
+  }
+  .footer__right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__btn-title {
+    margin-bottom: 10px;
+  }
 }
 
 .header__top {
