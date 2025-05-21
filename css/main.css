@@ -92,6 +92,8 @@ img {
   justify-content: center;
   gap: 20px;
   overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .review__item {
