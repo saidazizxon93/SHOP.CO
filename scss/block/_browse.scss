@@ -1,0 +1,120 @@
+.browse {
+}
+.browse__out {
+}
+.browse__inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 64px;
+  padding-right: 64px;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  margin-top: 80px;
+}
+.browse__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+.browse__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 259px 259px;
+  grid-gap: 20px;
+  margin-top: 64px;
+}
+.browse__item {
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 25px;
+  padding-left: 36px;
+  position: relative;
+}
+.browse__item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.browse__item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.browse__item:nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.browse__item:nth-child(3) {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.browse__item:nth-child(1) {
+  background-image: url("/imgs/image\ 11.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.browse__item:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
+.browse__item:nth-child(2) {
+  background-image: url("/imgs/image\ 13.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.browse__item:nth-child(3) {
+  background-image: url("/imgs/image\ 12.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.browse__item:nth-child(4) {
+  background-image: url("/imgs/image\ 14.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 440px) {
+  .browse__inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .browse__item-title {
+    max-width: 249px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .browse__list {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 190px 190px 190px 190px;
+  }
+  .browse__item {
+    padding-top: 10px;
+  }
+  .browse__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .browse__item:nth-child(1) {
+    grid-row: 1/2;
+  }
+  .browse__item:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .browse__item:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
