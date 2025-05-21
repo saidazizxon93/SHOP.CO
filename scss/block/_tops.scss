@@ -1,0 +1,32 @@
+.tops {
+}
+.tops__out {
+}
+.tops__inner {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.tops__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 55px;
+}
+.tops__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 440px) {
+  .tops__list {
+    max-width: 440px;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    gap: 20px;
+  }
+}
