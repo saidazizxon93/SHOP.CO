@@ -1268,6 +1268,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 420px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .detail__size-item-btn {
@@ -1334,5 +1336,34 @@ img {
   width: 18px;
   height: 18px;
   margin-top: 14px;
+}
+
+@media only screen and (max-width: 440px) {
+  .detail__inner {
+    display: block;
+  }
+  .detail__img {
+    width: 100%;
+    height: 290px;
+  }
+  .detail__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .detail__price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .detail__right-and-btn {
+    width: 236px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
