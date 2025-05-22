@@ -4,11 +4,9 @@ let id = params.get("id");
 console.log(products);
 
 console.log(id);
-let findProduct = products.find(function(el){
-   
-    
-    return el.id === Number(id)
-})
+let findProduct = products.find(function (el) {
+  return el.id === Number(id);
+});
 console.log(findProduct);
 
 detail.innerHTML = `
@@ -77,16 +75,16 @@ detail.innerHTML = `
               </div>
 `;
 
-
-let detailRight = document.querySelector('.detail__right-color');
+let detailRight = document.querySelector(".detail__right-color");
 
 console.log(detailRight);
 
-
-findProduct.colors.forEach((el,index)=>{
+findProduct.colors.forEach((el, index) => {
   console.log(el);
-  
-  detailRight.insertAdjacentHTML('beforeend', `
+
+  detailRight.insertAdjacentHTML(
+    "beforeend",
+    `
         <label
             for="detail-radio-custom${index + 1}"
             class="detail__color-label"
@@ -101,45 +99,87 @@ findProduct.colors.forEach((el,index)=>{
             <span style="background-color: ${el};" class="detail__color-spp detail-spp1"></span>
           </label>
 
-    `)
-})
+    `
+  );
+});
 
-let stars = document.querySelector("#stars")
+let stars = document.querySelector("#stars");
 
-for(let i =0; i< findProduct.rating; i++){
-  stars.insertAdjacentHTML("afterbegin", 
+for (let i = 0; i < findProduct.rating; i++) {
+  stars.insertAdjacentHTML(
+    "afterbegin",
     `
     <img src="/imgs/Star 1.svg" />
     `
-  )
+  );
 }
 
-
-let countS = document.querySelector(".detail__plus-text")
+let countS = document.querySelector(".detail__plus-text");
 let plusS = document.querySelector("#plus");
 let minusS = document.querySelector("#minus");
 
-
 let count = 1;
 
-
-function upDisplay(){
+function upDisplay() {
   countS.textContent = count;
 }
 
-
-function pluss(){
+function pluss() {
   count++;
-  upDisplay()
+  upDisplay();
 }
 
-function minus(){
+function minus() {
   if (count > 0) {
-    count --;
-    upDisplay()
+    count--;
+    upDisplay();
   }
 }
 
-
 plusS.addEventListener("click", pluss);
-minusS.addEventListener("click", minus)
+minusS.addEventListener("click", minus);
+
+let comentParent = document.querySelector(".coments__list");
+
+findProduct.comments.forEach((el) => {
+  comentParent.insertAdjacentHTML(
+    "beforeend",
+    `
+  <li class="coments__item">
+                  <span class="coments__item-reting"></span>
+                  <span class="coments__item-span">
+                    <h4 class="coments__item-title">
+                      ${el.user}
+                  
+                    </h4>
+                        <img
+                        width="24px"
+                        height="24px"
+                        src="./imgs/Vector (2).svg"
+                        alt=""
+                        class="coments__item-title-img"
+                      />
+                  </span>
+                  <p class="coments__item-text">
+                    ${el.comment}
+                  </p>
+
+                  <p class="coments__item-date">${el.posted}</p> 
+                </li>
+    `
+  );
+});
+
+// let comentReting = document.querySelector(".coments__item-reting");
+
+// findProduct.comments.forEach((el) => {
+//   for (let i = 1; i < el.userRate; i++) {
+//     comentReting.insertAdjacentHTML(
+//       "beforeend",
+//       `
+//        <img class="coments__item-title-img2" width="127px" height="22px" src="./imgs/Star 1.svg" alt="">
+
+//     `
+//     );
+//   }
+// });
