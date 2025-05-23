@@ -1,0 +1,42 @@
+.details {
+}
+
+.details__inner {
+}
+.filter {
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border: 1px solid #0000001a;
+  margin-top: 70px;
+}
+
+.filter__title {
+  font-family: Satoshi;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: $dark;
+  padding-bottom: 24px;
+}
+
+.filter__title {
+  width: 247px;
+  border-bottom: 1px solid #0000001a;
+  position: relative;
+}
+
+.filter__title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../imgs/filter\ logo.svg");
+  width: 24px;
+  height: 24px;
+  left: 226px;
+  cursor: pointer;
+}
+
