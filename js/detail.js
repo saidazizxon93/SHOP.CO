@@ -183,3 +183,25 @@ findProduct.comments.forEach((el) => {
 //     );
 //   }
 // });
+
+
+let looklikeParent = document.querySelector(".looklike__list");
+let newsArray = products.slice(0, 4);
+
+
+newsArray.forEach((el) => {
+  if(el.id === Number(id)) return;
+  looklikeParent.insertAdjacentHTML("beforeend", `
+     <li class="newproduct__item">
+                <div class="newproduct__img"><img src="${el.image}" alt="" class="newproduct__item-img"></div>
+                <h3 class="newproduct__item-title">${el.title}</h3>
+                 <div class="newproduct__item-stars">
+                     ${el.rating}/5
+                 </div> 
+                 <span style="display: flex; align-items: center; justify-content: space-between;">
+                <h3 class="newproduct__price">$${el.price}</h3>
+                <a href="./detail.html?id=${el.id}" class="newproduct__item-btn">More</a>
+                </span>
+              </li>
+    `)
+})
