@@ -197,17 +197,31 @@
   border-radius: 62px;
 }
 .cart__total-btn {
-      border: none;
+  border: none;
   background-color: black;
   color: white;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
   padding-top: 19px;
   padding-bottom: 19px;
   padding-left: 153px;
   padding-right: 189px;
   border-radius: 62px;
   margin-top: 43px;
+}
+
+@media only screen and (max-width: 440px) {
+  .cart__bigbox {
+    display: block;
+  }
+  .cart__list {
+    width: 388px;
+  }
+  .cart__total-form-inp {
+    width: 350px;
+  }
+  .cart__total-btn {
+    max-width: 350px;
+    padding-left: 0;
+    padding-right: 0;
+ 
+  }
 }
