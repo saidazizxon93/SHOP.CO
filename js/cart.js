@@ -87,3 +87,9 @@ let count = ppp.price;
 
  console.log(ppp.img);
  
+
+let delet = document.querySelector(".cart__item-deletbtn")
+
+delet.addEventListener("click", function(){
+  localStorage.removeItem("product")
+})
