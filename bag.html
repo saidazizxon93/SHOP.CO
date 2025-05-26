@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHOP.CO-DETAIL</title>
+    <title>SHOP.CO-CART</title>
     <link rel="Icon" href="./imgs/baner 1.svg" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -138,43 +138,46 @@
     <!-- header -->
     <main>
       <!-- section-1 -->
-      <section class="detail">
+      <section class="cart">
         <div class="container">
-          <div class="detail__out">
-            <div class="detail__inner"></div>
+          <div class="cart__out">
+            <div class="cart__inner">
+              <h2 class="cart__title">YOUR CART</h2>
+              <div class="cart__bigbox">
+                <ul class="cart__list">
+                 
+                </ul>
+
+                <div class="cart__total">
+                  <h3 class="cart__total-title">Order Summary</h3>
+
+                  <span class="cart__total-subtotal">
+                    <p class="cart__total-subtotal-text">Subtotal</p>
+                    <p class="cart__total-subtotal-price">$0</p>
+                  </span>
+                  <span class="cart__total-delivery">
+                    <p class="cart__total-delivery-text">Delivery Fee</p>
+                    <p class="cart__total-delivery-price">$15</p>
+                  </span>
+
+                  <span class="cart__total-total">
+                    <p class="cart__total-total-text">Total</p>
+                    <p class="cart__total-total-price">$0</p>
+                  </span>
+
+                  <form action="#" class="cart__total-form">
+                    <input placeholder="Add promo code" type="text" name="" id="" class="cart__total-form-inp">
+                    <button class="cart__total-form-btn">Apply</button>
+                  </form> 
+
+                  <button class="cart__total-btn">Go to Checkout</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- section-1 -->
-      <!-- section-2 -->
-      <section class="coments">
-        <div class="container">
-          <div class="coments__out">
-            <div class="coments__inner">
-              <div class="coments__top">
-                <h3 class="coments__top-title">All Reviews</h3>
-              </div>
-
-              <ul class="coments__list"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section-2 -->
-      <!-- section-3 -->
-      <section class="looklike">
-        <div class="container">
-          <div class="looklike__out">
-            <div class="looklike__inner">
-              <h2 class="looklike__title">YOU MIGHT ALSO LIKE</h2>
-
-              <ul class="looklike__list"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section-3 -->
-       <!-- section-4 -->
       <section class="stay">
         <div class="container">
           <div class="stay__inner">
@@ -196,9 +199,10 @@
           </div>
         </div>
       </section>
-      <!-- section-4 -->
-
+      <!-- section-5 -->
+      <!-- main -->
     </main>
+
     <!-- footer -->
     <footer class="footer">
       <div class="container">
@@ -330,7 +334,8 @@
       </div>
     </footer>
     <!-- footer -->
+
     <script src="./js/dresses.js"></script>
-    <script src="./js/detail.js"></script>
+    <script src="./js/cart.js"></script>
   </body>
 </html>

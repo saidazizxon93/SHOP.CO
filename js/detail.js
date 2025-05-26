@@ -192,7 +192,7 @@ let newsArray = products.slice(0, 4);
 newsArray.forEach((el) => {
   if(el.id === Number(id)) return;
   looklikeParent.insertAdjacentHTML("beforeend", `
-     <li class="newproduct__item">
+     <li class  ="newproduct__item">
                 <div class="newproduct__img"><img src="${el.image}" alt="" class="newproduct__item-img"></div>
                 <h3 class="newproduct__item-title">${el.title}</h3>
                  <div class="newproduct__item-stars">
@@ -205,3 +205,38 @@ newsArray.forEach((el) => {
               </li>
     `)
 })
+
+
+
+
+
+let setBtn = document.querySelector(".detail__right-and-btn");
+
+console.log(setBtn);
+
+
+let localArray = JSON.parse(localStorage.getItem("product")) || [];
+
+setBtn.addEventListener("click", function(){
+      localStorage.setItem("product", JSON.stringify(findProduct))
+
+      // let obj = {
+      //   img: findProduct.img,
+      //   title: findProduct.title,
+      //   price: findProduct.price, 
+      // }
+
+      // localArray.push(obj);
+      // localStorage.setItem("product", JSON.stringify(localArray))
+      // renderProduct(obj)
+
+      // if(!localArray.includes(findProduct)){
+      //   localArray.push(localStorage.setItem("product", JSON.stringify(findProduct)))
+      // }
+
+})
+
+console.log(localArray);
+
+
+
