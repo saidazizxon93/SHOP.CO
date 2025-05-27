@@ -594,6 +594,10 @@ img {
   gap: 14px;
 }
 
+.header__bottom-iitem {
+  position: relative;
+}
+
 .header__bottom-burbtn {
   border: none;
   background-color: transparent;
@@ -603,6 +607,20 @@ img {
 .header__serchbtn {
   border: none;
   background-color: transparent;
+  display: none;
+}
+
+.tttttt {
+  position: absolute;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  top: 0;
+  right: -5px;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
   display: none;
 }
 
@@ -1502,7 +1520,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  width: 675px;
+  width: 100%;
 }
 
 .cart__item {
@@ -1693,12 +1711,19 @@ img {
 
 .cart__total-form {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cart__total-form-inp {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 52px;
+  width: 100%;
   width: 326px;
   border: none;
   background-color: #f0f0f0;
@@ -1715,8 +1740,7 @@ img {
   letter-spacing: 0%;
   padding-top: 13px;
   padding-bottom: 13px;
-  padding-left: 38px;
-  padding-right: 38px;
+  width: 100%;
   border-radius: 62px;
 }
 
@@ -1726,18 +1750,14 @@ img {
   color: white;
   padding-top: 19px;
   padding-bottom: 19px;
-  padding-left: 153px;
-  padding-right: 189px;
   border-radius: 62px;
   margin-top: 43px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 440px) {
   .cart__bigbox {
     display: block;
-  }
-  .cart__list {
-    width: 388px;
   }
   .cart__total-form-inp {
     width: 350px;
@@ -1747,5 +1767,151 @@ img {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.category__inner {
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+}
+
+.category__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  max-width: 925px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.category__left {
+  border: 1px solid #0000001a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 20px;
+}
+
+.category__left-box1 {
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 24px;
+  gap: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.category__left-box1-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.category__left-types {
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 24px;
+}
+
+.category__left-types-label {
+  display: block;
+  margin-top: 20px;
+}
+
+.category__left-types-spp {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.category__left-price {
+  border-bottom: 1px solid #0000001a;
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.category__left-price-title {
+  margin-top: 24px;
+}
+
+.category__left-price-inp {
+  width: 237px;
+  margin-top: 20px;
+}
+
+.category__left-colors {
+  padding-top: 24px;
+  border-bottom: 1px solid #0000001a;
+}
+
+.category__left-colors-title {
+  margin-top: 24px;
+}
+
+.category__left-color {
+  margin-top: 20px;
+}
+
+.category__left-color {
+  width: 247px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cotegory__color:checked + .cotegory__color-spp::before {
+  display: block;
+}
+
+.cotegory__color-spp {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+}
+
+.cotegory__color-spp::before {
+  content: "";
+  position: absolute;
+  background-image: url("/imgs/Frame (6).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 7px;
+  display: none;
+}
+
+.andbtn {
+  border: none;
+  border-radius: 62px;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 87px;
+  padding-right: 87px;
+  margin-top: 38px;
 }
 /*# sourceMappingURL=main.css.map */

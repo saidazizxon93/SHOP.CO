@@ -1,0 +1,136 @@
+.category {
+}
+.category__out {
+}
+.category__inner {
+  padding-top: 70px;
+  display: flex;
+  gap: 7px;  
+}
+.category__left {
+}
+.category__right {
+}
+.category__title {
+}
+.category__list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 925px;
+  flex-wrap: wrap;
+}
+.category__left{
+  border: 1px solid #0000001a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 20px;
+}
+.category__left-box1 {
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 24px;
+  gap: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category__left-box1-title {
+}
+.category__left-box1-btn {
+  border: none;
+  background-color: transparent;
+}
+.category__left-box1-btn-img {
+}
+
+.category__left-types {
+  border-bottom: 1px solid #0000001a;
+  padding-bottom: 24px;
+}
+
+.category__left-types-label {
+  display: block;
+  margin-top: 20px;
+}
+.category__left-types-inp {
+}
+.category__left-types-spp {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+
+.category__left-price {
+  border-bottom: 1px solid #0000001a;
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+.category__left-price-title {
+  margin-top: 24px;
+}
+.category__left-price-inp {
+  width: 237px;
+  margin-top: 20px;
+}
+
+
+
+.category__left-colors {
+  padding-top: 24px;
+  border-bottom: 1px solid #0000001a;
+}
+.category__left-colors-title {
+  margin-top: 24px;
+}
+.category__left-color {
+  margin-top: 20px;
+}
+
+
+.category__left-color{
+  width: 247px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+.cotegory__color:checked + .cotegory__color-spp::before{
+  display: block; 
+}
+.cotegory__color-spp{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+}
+.cotegory__color-spp:hover{
+}
+.cotegory__color-spp::before{
+  content: "";
+  position: absolute;
+  background-image: url("/imgs/Frame\ \(6\).svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  top: 7px;
+  left: 7px;
+  display: none;
+}
+.andbtn{
+  border: none;
+  border-radius: 62px;
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 87px;
+  padding-right: 87px;
+  margin-top: 38px;
+}

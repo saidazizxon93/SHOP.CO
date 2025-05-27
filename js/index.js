@@ -82,3 +82,6 @@ function topDisplay(array) {
 }
 
 topDisplay(topSelling);
+
+
+

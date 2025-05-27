@@ -12,6 +12,7 @@ let products = [
     discount: 0,
     colors: ["darkgreen", "chocolate", "darkviolet"],
     seling: 50,
+    type: "Jeans",
     comments: [
       {
         user: "Samatha",
@@ -69,6 +70,7 @@ let products = [
     discount: 10,
     colors: ["midnightblue", "dimgray", "black"],
     seling: 123,
+    type: "Hoodie",
     comments: [
       {
         user: "Samatha",
@@ -126,6 +128,7 @@ let products = [
     discount: 0,
     colors: ["navy", "slategray", "maroon"],
     seling: 197,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -183,6 +186,7 @@ let products = [
     discount: 5,
     colors: ["darkred", "indigo", "black"],
     seling: 200,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
@@ -240,6 +244,7 @@ let products = [
     discount: 0,
     colors: ["purple", "darkslateblue", "midnightblue"],
     seling: 90,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -297,6 +302,7 @@ let products = [
     discount: 0,
     colors: ["darkolivegreen", "teal", "black"],
     seling: 154,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
@@ -354,6 +360,7 @@ let products = [
     discount: 15,
     colors: ["charcoal", "navy", "black"],
     seling: 133,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -411,7 +418,7 @@ let products = [
     discount: 0,
     colors: ["crimson", "darkslategray", "darkblue"],
     seling: 23,
-
+    type: "Shorts",
     comments: [
       {
         user: "Samatha",
@@ -469,6 +476,7 @@ let products = [
     discount: 20,
     colors: ["black", "orchid", "deeppink"],
     seling: 155,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -526,6 +534,7 @@ let products = [
     discount: 0,
     colors: ["saddlebrown", "darkslategray", "black"],
     seling: 177,
+    type: "Hoodie",
     comments: [
       {
         user: "Samatha",
@@ -583,6 +592,7 @@ let products = [
     discount: 0,
     colors: ["black", "dimgray", "darkslateblue"],
     seling: 164,
+    type: "Hoodie",
     comments: [
       {
         user: "Samatha",
@@ -640,6 +650,7 @@ let products = [
     discount: 0,
     colors: ["black", "midnightblue", "darkviolet"],
     seling: 200,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -697,6 +708,7 @@ let products = [
     discount: 10,
     colors: ["darkgreen", "darkblue", "black"],
     seling: 44,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
@@ -754,6 +766,7 @@ let products = [
     discount: 0,
     colors: ["gray", "dimgray", "black"],
     seling: 101,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
@@ -811,6 +824,7 @@ let products = [
     discount: 5,
     colors: ["darkslategray", "black", "indigo"],
     seling: 70,
+    type: "Hoodie",
     comments: [
       {
         user: "Samatha",
@@ -868,6 +882,7 @@ let products = [
     discount: 0,
     colors: ["midnightblue", "black", "darkmagenta"],
     seling: 100,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -925,6 +940,7 @@ let products = [
     discount: 0,
     colors: ["black", "darkolivegreen", "gray"],
     seling: 20,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
@@ -982,6 +998,7 @@ let products = [
     discount: 0,
     colors: ["black", "charcoal", "navy"],
     seling: 90,
+    type: "Hoodie",
     comments: [
       {
         user: "Samatha",
@@ -1039,6 +1056,7 @@ let products = [
     discount: 0,
     colors: ["darkorchid", "black", "indigo"],
     seling: 41,
+    type: "Shirts",
     comments: [
       {
         user: "Samatha",
@@ -1096,6 +1114,7 @@ let products = [
     discount: 10,
     colors: ["darkcyan", "black", "darkslategray"],
     seling: 10,
+    type: "T-shirts",
     comments: [
       {
         user: "Samatha",
