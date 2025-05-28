@@ -1,4 +1,5 @@
 let categoryParent = document.querySelector(".category__list");
+let ctitle = document.querySelector(".category__title")
 let categoryParams = new URLSearchParams(window.location.search);
 let category = categoryParams.get("category");
 console.log(category);
@@ -41,3 +42,5 @@ function ggggg(arr){
 ggggg(findCategory)
 
 
+
+ctitle.innerHTML = category

@@ -128,9 +128,28 @@
   border-radius: 62px;
   background-color: black;
   color: white;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 87px;
-  padding-right: 87px;
   margin-top: 38px;
+}
+.category__title-btn{
+  border: none;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 440px){
+  .category__inner{
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .category__left-types{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .category__list{
+    justify-content: center;
+  }
 }
