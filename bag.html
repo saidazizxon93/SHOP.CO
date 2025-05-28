@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHOP.CO-CART</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <link rel="Icon" href="./imgs/baner 1.svg" />
     <link rel="stylesheet" href="./css/main.css" />
+ 
   </head>
   <body>
     <div class="header__top">
@@ -26,13 +29,13 @@
       </div>
     </div>
     <!-- header -->
-   <header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__out">
           <div class="header__inner">
             <div
-              class="header__bottom wow fadeInRight"
-              data-wow-duration="1.7s"
+              class="header__bottom"
+            
             >
               <button class="header__bottom-burbtn">
                 <img
@@ -145,9 +148,7 @@
             <div class="cart__inner">
               <h2 class="cart__title">YOUR CART</h2>
               <div class="cart__bigbox">
-                <ul class="cart__list">
-                 
-                </ul>
+                <ul class="cart__list"></ul>
 
                 <div class="cart__total">
                   <h3 class="cart__total-title">Order Summary</h3>
@@ -167,9 +168,15 @@
                   </span>
 
                   <form action="#" class="cart__total-form">
-                    <input placeholder="Add promo code" type="text" name="" id="" class="cart__total-form-inp">
+                    <input
+                      placeholder="Add promo code"
+                      type="text"
+                      name=""
+                      id=""
+                      class="cart__total-form-inp"
+                    />
                     <button class="cart__total-form-btn">Apply</button>
-                  </form> 
+                  </form>
 
                   <button class="cart__total-btn">Go to Checkout</button>
                 </div>

@@ -88,7 +88,7 @@ console.log(allRadio);
 
 allRadio.forEach((radio) => {
   radio.addEventListener("click", function () {
-    let finddd = products.filter((item) => item.type === radio.value)
+    let finddd = findCategory.filter((item) => item.type === radio.value)
     ggggg(finddd);
     console.log(finddd);
   });
@@ -99,7 +99,7 @@ let allCheck = document.querySelectorAll('input[type="checkbox"]')
 function filterCheck(){
   let checkValue = [...allCheck].filter((check) => check.checked).map((el) => el.value);
 
-  let FilterByColor = products.filter((product) => checkValue.every((mat) => product.colors.includes(mat)));
+  let FilterByColor = findCategory.filter((product) => checkValue.every((mat) => product.colors.includes(mat)));
 
   ggggg([...FilterByColor])
 }
